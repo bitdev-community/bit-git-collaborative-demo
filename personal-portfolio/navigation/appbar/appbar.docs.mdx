@@ -1,0 +1,41 @@
+---
+description: An application navigation bar implemented using a reusable navigation component defined in `design` library
+labels: ["navigation"]
+---
+
+import { MemoryRouter } from "react-router-dom";
+import { Appbar } from "./appbar";
+
+A component renders an app bar (navigation bar) for the portfolio.
+Use with `ThemeProvider` to enforce styling.
+
+### Component usage
+
+Use with `ThemeProvider` for a theme object.
+Use with a React Router DOM implementation for the Router Links
+
+```js
+<Appbar
+  logo={<div>Hello</div>}
+  navLinks={[
+    { label: "Projects", url: "/projects" },
+    { label: "Contact", url: "/contact" },
+    { label: "About me", url: "/about" },
+  ]}
+/>
+```
+
+### Render sample app bar.
+
+```js live
+<MemoryRouter>
+  <Appbar
+    logo={<div>Hello</div>}
+    navLinks={[
+      { label: "Projects", url: "/projects" },
+      { label: "Contact", url: "/contact" },
+      { label: "About me", url: "/about" },
+    ]}
+  />
+</MemoryRouter>
+```

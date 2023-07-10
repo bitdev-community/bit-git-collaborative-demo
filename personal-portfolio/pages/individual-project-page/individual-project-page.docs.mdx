@@ -1,0 +1,36 @@
+---
+description: A component that creates a Page for an Individual Project
+labels: ["page", "individual project page"]
+---
+
+import { Routes, MemoryRouter, Route } from "react-router-dom";
+import { IndividualProjectPage } from "./individual-project-page";
+
+A page component that renders information about a single project
+Use with a `ThemeProvider` to enforce styling.
+
+### Component usage
+
+Since this is a page level component, use it with a router and a theme provider to enforce theming.
+It expected `react-router-dom` as there is a hook `useParams` that fetched the id passed from path params to render the object.
+Path param = `id`
+
+```js
+<Main>
+  <MemoryRouter initialEntries={[{ pathname: "/projects/1" }]} initialIndex={0}>
+    <Routes>
+      <Route path="/projects/:id" element={<IndividualProjectPage />} />
+    </Routes>
+  </MemoryRouter>
+</Main>
+```
+
+### Render project page by ID
+
+```js live
+<MemoryRouter initialEntries={[{ pathname: "/projects/1" }]} initialIndex={0}>
+  <Routes>
+    <Route path="/projects/:id" element={<IndividualProjectPage />} />
+  </Routes>
+</MemoryRouter>
+```

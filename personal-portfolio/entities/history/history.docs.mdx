@@ -1,0 +1,28 @@
+---
+description: "A History entity used to represent work experience."
+labels: ["entity", "History"]
+---
+
+import { History } from "./history";
+
+The entity component creates an in-memory representation of a work experience item.
+
+## Live Playground
+
+Change the values in the history object to see it render in live.
+
+```tsx live
+() => {
+  const workItem = new History({
+    designation: "Software Engineer",
+    company: "Google",
+    yearsOfExperience: 3,
+  });
+
+  return (
+    <div>
+      {workItem.designation} | {workItem.company} | {workItem.yearsOfExperience}
+    </div>
+  );
+};
+```

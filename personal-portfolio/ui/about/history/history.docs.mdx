@@ -1,0 +1,68 @@
+---
+description: A component that renders the work history of the user.
+labels: ["work experience", "history"]
+---
+
+import { History as HistoryEntity } from "@showoff/personal-portfolio.entities.history";
+import { ThemeProvider } from "@mui/material";
+import { History } from "./history";
+
+A component that does renders the work history of a person
+
+### Component usage
+
+Use with `ThemeProvider` to enforce styling
+
+```js
+<History
+  history={[
+    new HistoryEntity({
+      designation: "Software Engineer",
+      company: "ABC Company",
+      yearsOfExperience: 3,
+      period: "2019 - Present",
+    }),
+    new HistoryEntity({
+      designation: "Senior Software Engineer",
+      company: "ABC Company",
+      yearsOfExperience: 3,
+      period: "2019 - Present",
+    }),
+    new HistoryEntity({
+      designation: "Associate Technical Lead",
+      company: "ABC Company",
+      yearsOfExperience: 5,
+      period: "2020 - 2021",
+    }),
+  ]}
+/>
+```
+
+### Render sample history
+
+```js live
+<ThemeProvider>
+  <History
+    history={[
+      new HistoryEntity({
+        designation: "Software Engineer",
+        company: "ABC Company",
+        yearsOfExperience: 3,
+        period: "2019 - Present",
+      }),
+      new HistoryEntity({
+        designation: "Senior Software Engineer",
+        company: "ABC Company",
+        yearsOfExperience: 3,
+        period: "2019 - Present",
+      }),
+      new HistoryEntity({
+        designation: "Associate Technical Lead",
+        company: "ABC Company",
+        yearsOfExperience: 5,
+        period: "2020 - 2021",
+      }),
+    ]}
+  />
+</ThemeProvider>
+```

@@ -1,0 +1,24 @@
+---
+description: A component that displays a list of projects.
+labels: ["List", "Project List"]
+---
+
+import { MemoryRouter } from "react-router-dom";
+import { ProjectsList } from "./projects-list";
+
+A component that displays a list of projects.
+Use with `ThemeProvider` to enforce thememing.
+
+### Component usage
+
+```js
+<ProjectsList max={10} />
+```
+
+### Render project list with no maximum number
+
+```js live
+<MemoryRouter>
+  <ProjectsList />
+</MemoryRouter>
+```

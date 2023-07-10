@@ -1,0 +1,16 @@
+---
+description: 'A hook that is used to access site settings in the local storage'
+labels: ['hook', 'local storage access']
+---
+
+API:
+
+```ts
+const { initializeSettings, saveSettings } = useLocalStorage();
+
+// use save settings to save data in local storage
+saveSettings(object:any): void
+
+// use initializeSettings to fetch data from local storage
+const settings = initializeSettings();
+```

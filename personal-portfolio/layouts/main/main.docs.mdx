@@ -1,0 +1,65 @@
+---
+description: A layout component that presents a header, footer and content
+labels: ["Layout", "Application Layout", "Look and Feel"]
+---
+
+import { MemoryRouter } from "react-router-dom";
+import { Link } from "@showoff/design.navigation.link";
+import { Logo } from "@showoff/design.brand.logo";
+import { Typography } from "@showoff/design.typography.typography";
+import { Main } from "./main";
+
+A component that acts as a layout component and positions the header, footer and content.
+Use with `ThemeProvider` to enforce themeing.
+
+### Component usage
+
+```js
+<Main
+  headerProps={{
+    logo: (
+      <Link to="/">
+        <Logo />
+      </Link>
+    ),
+    navLinks: [
+      { label: "Projects", url: "/projects" },
+      { label: "Contact", url: "/contact" },
+      { label: "About me", url: "/about" },
+    ],
+  }}
+  footerProps={{
+    leftContent: "Thanks for visiting.",
+    rightContent: `© ${new Date().getFullYear()} Ober. All Rights Reserved.`,
+  }}
+>
+  {children}
+</Main>
+```
+
+### Render sample main layout.
+
+```js live
+<MemoryRouter>
+  <Main
+    headerProps={{
+      logo: (
+        <Link to="/">
+          <Logo />
+        </Link>
+      ),
+      navLinks: [
+        { label: "Projects", url: "/projects" },
+        { label: "Contact", url: "/contact" },
+        { label: "About me", url: "/about" },
+      ],
+    }}
+    footerProps={{
+      leftContent: "Thanks for visiting.",
+      rightContent: `© ${new Date().getFullYear()} Ober. All Rights Reserved.`,
+    }}
+  >
+    <Typography variant="h1">This is the body.</Typography>
+  </Main>
+</MemoryRouter>
+```

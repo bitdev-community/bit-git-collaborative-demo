@@ -1,0 +1,5 @@
+# Redirect all requests to /api/contact to a Lambda function URL
+# Update the lambda function URL with your own one
+
+/api/* https://7csnzm7chdha5jsdvbfe442dgi0oruxw.lambda-url.us-east-1.on.aws/api/:splat 200
+/*      /index.html     200

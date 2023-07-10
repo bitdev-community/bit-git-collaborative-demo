@@ -1,0 +1,31 @@
+---
+description: An application footer implemented using a reusable footer component defined in `design` library
+labels: ["application footer", "footer"]
+---
+
+import { Appfooter } from "./appfooter";
+import { lightTheme } from "@showoff/design.theme.light-theme";
+import { ThemeProvider } from "@showoff/design.theme.theme-provider";
+
+A component that renders an application footer.
+Use with `ThemeProvider` to enforce styling.
+
+### Component usage
+
+Use with a `ThemeProvider` for styles.
+
+```js
+<Appfooter
+  leftContent="© 2021, Built with React, TypeScript, and MUI"
+  rightContent="Made with ❤️ by @showoff"
+/>
+```
+
+### Render sample footer.
+
+```js live
+<Appfooter
+  leftContent="© 2021, Built with React, TypeScript, and MUI"
+  rightContent="Made with ❤️ by @showoff"
+/>
+```

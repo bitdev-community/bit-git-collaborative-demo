@@ -1,0 +1,40 @@
+---
+description: A Portfolio Site Application.
+labels: ["portfolio", "app"]
+---
+
+Configure the app plugin on your workspace:
+
+```bash
+bit use apps/portfolio
+```
+
+### Run the application
+
+You can run your application on a separate port to see it outside of the Bit workspace
+
+```bash
+bit run portfolio
+```
+
+### Deploying the application
+
+The application is currently configured to be deployed with the Netlifyer Deployer.
+
+```
+const netlifyConfig = {
+  accessToken: process.env.NETLIFY_AUTH_TOKEN,
+  stagingSiteName: 'portfolio-showoff-staging',
+  productionSiteName: 'portfolio-showoff-production',
+  team: 'enlear',
+  redirects: '_redirects',
+  webpackTransformers: [
+    splitChunks,
+    (config, context) => addSitemap(config, context, [...prerenderRoutes]),
+  ],
+};
+
+```
+
+Therefore, when you are deploying, ensure that you have added the `NETLIFY_AUTH_TOKEN` as an `env` var using the command `export NETLIFY_AUTH_TOKEN=<<YOUR-TOKEN>>`.
+Hereafter, run `bit tag` to deploy the application.
