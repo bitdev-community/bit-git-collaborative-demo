@@ -38,7 +38,9 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@showoff/design.navigation.footer": "^0.0.47"
+      },
       "peerDependencies": {}
     },
     "linkCoreAspects": true,
