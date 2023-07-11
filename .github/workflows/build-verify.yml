@@ -1,7 +1,7 @@
 name: Build and Verify
 on:
   push:
-    branches:
+    branches-ignore:
       - main
   workflow_dispatch:
 jobs:
