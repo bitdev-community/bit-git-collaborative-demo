@@ -1,6 +1,9 @@
 name: Release Components
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 permissions:
   contents: write
 jobs:
