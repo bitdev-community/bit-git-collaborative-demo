@@ -43,7 +43,13 @@
         "scope": "showoff.personal-portfolio",
         "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/hooks/use-local-storage"
+        "rootDir": "personal-portfolio/hooks/use-local-storage",
+        "config": {
+            "teambit.react/react-env@0.1.9": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react-env"
+            }
+        }
     },
     "hooks/use-project": {
         "scope": "showoff.personal-portfolio",
