@@ -11,19 +11,19 @@
 {
     "apps/portfolio": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.98",
+        "version": "0.0.99",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
     "constants/data": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/constants/data"
     },
     "contexts/settings-context": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.37",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/contexts/settings-context"
     },
@@ -41,15 +41,9 @@
     },
     "hooks/use-local-storage": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/hooks/use-local-storage",
-        "config": {
-            "teambit.react/react-env@0.1.9": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react-env"
-            }
-        }
+        "rootDir": "personal-portfolio/hooks/use-local-storage"
     },
     "hooks/use-project": {
         "scope": "showoff.personal-portfolio",
@@ -65,19 +59,19 @@
     },
     "layouts/main": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.52",
+        "version": "0.0.53",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
     "navigation/appbar": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.48",
+        "version": "0.0.49",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
     "navigation/appfooter": {
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.40",
+        "version": "0.0.41",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appfooter"
     },
