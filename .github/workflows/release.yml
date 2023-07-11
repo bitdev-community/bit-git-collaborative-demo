@@ -30,4 +30,3 @@ jobs:
         with:
           git-user-name: ${{ steps.commit.outputs.user_name }}
           git-user-email: ${{ steps.commit.outputs.user_email }}
-          skip-push: 'true'
